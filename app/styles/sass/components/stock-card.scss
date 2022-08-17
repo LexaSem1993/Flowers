@@ -76,7 +76,7 @@
             display: flex;
         }
         &__star{
-            content: url(../img/star.svg);
+            content: url(../images/star.svg);
         }
         &__text{
             display: flex;
@@ -126,7 +126,7 @@
             padding: 22px 51px;
         }
         &__button-order::before{
-            content: url(../img/button-order.svg);
+            content: url(../images/button-order.svg);
             position: absolute;
             width: 92px;
             height: 66px;
@@ -153,7 +153,7 @@
             height: auto;
         }
         .swiper-button-prev{
-            content: url(../img/prev.svg);
+            content: url(../images/prev.svg);
             position: absolute;
             top: 45px;
             right: 55px;
@@ -162,7 +162,7 @@
             height: 27px;
         }
         .swiper-button-next{
-            content: url(../img/next.svg);
+            content: url(../images/next.svg);
             position: absolute;
             top: 45px;
             right: 15px;
