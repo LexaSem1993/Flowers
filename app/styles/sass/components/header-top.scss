@@ -1,0 +1,100 @@
+.header-top{
+    width: 100%;
+    font-family: "Euclid Circular B", sans-serif;
+    height: 50px;
+    background-color: #333333;
+    &__container{
+        flex-wrap: wrap;
+    }
+    &__list{
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+    &__list-dropdown{
+        gap: 63px;
+    }
+    &__item-dropdown{
+        display: flex;
+    }
+    &__item-dropdown-title{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-right: 10px;
+        padding: 16px 0;
+    }
+    &__select-dropdown{
+        background-color: inherit;
+        color: #956D84;
+        border: none;
+        padding: 0;
+    }
+    &__list-two{
+        margin-left: 33px;
+        gap: 33px;
+    }
+    &__link-two{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__link-two-title{
+        font-family: 'Museo Sans Cyrl';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 16px 15px;
+        color: #fff;
+    }
+    &__list-user{
+        margin-left: auto;
+        gap: 0;
+    }
+    &__link-user{
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    &__link-user-title{
+        padding: 15px;
+    }
+    &__border{
+        width: 1px;
+        height: 14px;
+        background-color: #956D84;
+    }
+    &__svg-number{
+        font-family: 'PT Sans',sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #414141;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        opacity: 0.7;
+        text-align: center;
+        align-items: center;
+        border-radius: 50%;
+        top: 12px;
+        left: 13px;
+    }
+}
+@media (max-width:1260px) {
+    .header-top{
+        &__container{
+            flex-direction: column;
+            background-color: #333333;
+        }
+        &__list-user{
+            margin-left: 0;
+            gap: 0;
+        }
+    }
+}

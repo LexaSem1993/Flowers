@@ -1,0 +1,34 @@
+.footer-bottom{
+        padding-bottom: 41px;
+        margin-top: 15px;
+    &__title-copyright{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+    }
+    &__payment{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+    &__list-payment{
+        display: flex;
+        gap: 28px;
+        margin-left: 38px;
+    }
+    &__item-payment{
+        align-self: center;
+    }
+    &__title-payment{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+    }
+    &__link-payment{
+        display: block;
+    }
+}

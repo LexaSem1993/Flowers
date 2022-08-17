@@ -1,0 +1,172 @@
+.stock-card, 
+    .sale-card, 
+    .present-card{
+        margin-bottom: 140px;
+        &__container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+            font-family: "Museo Sans Cyrl",sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            color: #333;
+            margin-bottom: 35px;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #956D84;
+        }
+        &__link{
+            background: #FBF9FA;
+            position: relative;
+        }
+        &__discounts{
+            font-family: "Museo Sans Cyrl",sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18px;
+            display: flex;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 56px;
+            height: 56px;   
+            border-radius: 50%;  
+            border: 2px dashed #E72222;
+            justify-content: center; 
+            align-items: center;
+            color: #000;
+          }
+        &__favorites{
+            position: absolute;
+            top: 20px;
+            right: 29px;
+        }
+        &__top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Euclid Circular B",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            position: absolute;
+            bottom: 27px;
+            right: 18px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: rgba(157, 117, 140, 0.39);
+            color: #956D84;
+            text-transform: uppercase;
+        }
+        &__img{
+            margin: 0 auto;
+        }
+        &__stars-container{
+            margin-top: 16px;
+            margin-left: 25px;
+            margin-bottom: 13px;
+            display: flex;
+        }
+        &__star{
+            content: url(../img/star.svg);
+        }
+        &__text{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px;
+            align-items: center;
+            margin-bottom: 37px;
+        }
+        &__name{
+            font-family: "Museo Sans Cyrl",sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 18px;
+            color: #333;
+        }
+        &__prices{
+            display: flex;
+            flex-direction: column;
+        }
+        &__noprice{
+            font-family: "Museo Sans Cyrl", sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 18px;
+            color: #BDBDBD;
+            text-decoration-line: line-through;
+        }
+        &__price{
+            font-family: "Museo Sans Cyrl",sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            color: #956D84;
+        }
+        &__button-order{
+            position: relative;
+            font-family: "Museo Sans Cyrl";
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #fff;
+            background-color: #956D84;
+            box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 7px;
+            margin: 0 auto;
+            padding: 22px 51px;
+        }
+        &__button-order::before{
+            content: url(../img/button-order.svg);
+            position: absolute;
+            width: 92px;
+            height: 66px;
+            z-index: 1;
+            top: 0;
+            right: 0;
+        }
+        &__button-quickorder{
+            margin-top: 14px;
+            font-family: "Euclid Circular B";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #828282;
+            text-decoration-line: underline;
+            margin: 0 auto;
+            margin-top: 4px;
+            padding: 15px 17px;
+        }
+        .swipe{
+            position: relative;
+        }
+        .swiper-slide{
+            height: auto;
+        }
+        .swiper-button-prev{
+            content: url(../img/prev.svg);
+            position: absolute;
+            top: 45px;
+            right: 55px;
+            left: auto;
+            width: 16px;
+            height: 27px;
+        }
+        .swiper-button-next{
+            content: url(../img/next.svg);
+            position: absolute;
+            top: 45px;
+            right: 15px;
+            width: 16px;
+            height: 27px;
+        }
+    } 

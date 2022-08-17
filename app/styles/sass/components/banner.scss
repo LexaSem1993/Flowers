@@ -1,0 +1,123 @@
+.banner{
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 28px;
+    }
+    &__item-discounts{
+        position: relative;
+        grid-column: 1 / 3;
+        grid-row: 1 /-1;
+    }
+    &__title-discounts{
+        position: absolute;
+        top: 44px;
+        left: 268px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        max-width: 412px;
+        color: #333;
+    }
+    &__span-discounts{
+        color: #fff;
+    }
+    &__item-roses{
+        position: relative;
+        grid-column: 3 / 4;
+        grid-row: 0 / 2;
+    }
+    &__title-roses{
+        position: absolute;
+        top: 42px;
+        left: 21px;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333;
+    }
+    &__item-present{
+        position: relative;
+        grid-column: 4 / 5;
+        grid-row: 0 / 2;
+    }
+    &__title-present{
+        position: absolute;
+        top: 44px;
+        left: 24px;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333;
+    }
+    &__item-basket{
+        position: relative;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    &__title-basket{
+        position: absolute;
+        top: 44px;
+        left: 24px;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333;
+    }
+    &__item-boxes{
+        position: relative;
+        
+    }
+    &__title-boxes{
+        max-width: 283px;
+        position: absolute;
+        top: 44px;
+        left: 24px;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333;
+    }
+    &__img{
+        max-width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:1400px) {
+    .banner{
+        &__list{
+            margin: 0 auto;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        &__item-discounts{
+            position: relative;
+            grid-column: 1 / 3;
+            grid-row: 1 /3;
+        }
+        &__item-roses{
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        &__item-present{
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+        }
+        &__item-basket{
+            position: relative;
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+        &__item-boxes{
+            position: relative;
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+    }
+}

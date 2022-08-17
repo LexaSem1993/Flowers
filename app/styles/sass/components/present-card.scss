@@ -1,0 +1,13 @@
+.present-card{
+    &__link{
+        width: 100%;
+        height: auto;
+    }
+    &__stars-container{
+        height: 15px;
+    }
+    &__text{
+        height: 54px;
+        margin-bottom: 17px;
+    }
+}

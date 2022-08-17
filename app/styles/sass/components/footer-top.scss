@@ -1,0 +1,52 @@
+.footer-top{
+    &__container{
+        align-items: start;
+        border-bottom: 1px solid #956D84;
+    }
+    &__link-logo{
+        margin-top: 32px;
+    }
+    &__info{
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+        margin-bottom: 32px;
+        max-width: 1060px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    &__title{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #fff;
+        margin-bottom: 38px;
+    }
+    &__link{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+    }
+    &__item-information:not(:last-child),
+    &__item-support:not(:last-child),
+    &__item-private:not(:last-child),
+    &__item-additionally:not(:last-child){
+        margin-bottom: 16px;
+    }
+}
+@media (max-width:1280px) {
+    .footer-top{
+        &__container{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__info{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
