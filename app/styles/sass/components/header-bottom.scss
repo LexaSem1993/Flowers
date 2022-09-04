@@ -137,6 +137,12 @@
         top: -5px;
         right: -7px;
     }
+    .menu{
+        display: none;
+    }
+    &__logo-right{
+        display: none;
+    }
 }
 @media (max-width:1260px) {
     .header-bottom{
@@ -165,4 +171,114 @@
         margin-top: 0;
     }
 }
+}
+@media (max-width:827px) {
+    .header-bottom{
+        margin-top: 0;
+        &__search,
+        &__section-two,
+        &__contacts{
+            display: none;
+        }
+        &__logo{
+            display: flex;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .menu {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            position: fixed;
+            transform: translateX(-100%);
+            top: 0;
+            left: 0;
+            transition: transform .3s ease-in;
+            z-index: 10;
+            
+          }
+        .active{
+            transform: translateX(0%);
+            transition: transform .3s ease-in;
+          }
+        .menu .burger-menu {
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            background: #333;
+            position: absolute;
+            left: calc(100%);
+            top: 10px;
+            cursor: pointer;
+          }
+        &__logo-right{
+            display: flex;
+        }
+        &__score{
+            margin-left: 21px;
+        }
+    }
+    .burger-menu  {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        &__list{
+        }
+        &__item{
+            display: flex;
+
+        }
+        &__span{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #956D84;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+        &__span-centre{
+            width: 20px;
+        }
+        &__link{
+            display: block;
+        }
+        &__item-close{
+            display: flex;
+            align-items: center;
+            height: 72px;
+            background-color: #333;
+        }
+        &__title-close{
+            font-family: "Museo Sans Cyrl", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            margin-left: 19px;
+            color: #fff;
+        }
+        &__close{
+            margin-left: auto;
+            margin-right: 21px;
+            width: 14px;
+            height: 14px;
+        }
+        &__span-close-one{
+            display: block;
+            width: 18px;
+            height: 2px;
+            transform: rotate(45deg) translate(3px, 5px);
+            background-color: #fff;
+        }
+        &__span-close-two{
+            display: block;
+            width: 18px;
+            height: 2px;
+            transform: rotate(-45deg) translate(-4px,2px);
+            background-color: #fff;
+        }
+    }
 }

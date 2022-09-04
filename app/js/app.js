@@ -95,4 +95,29 @@ document.addEventListener('DOMContentLoaded', () => {
 					},
 		},
 	});
+	const width = window.innerWidth
+  	if (width <= 768){
+		const swiper3 = new Swiper('.js-swiper-forum', {
+			direction: 'horizontal',
+			slidesPerView: 1,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	}
 })
+let burger = document.querySelector('.burger-menu'),
+    menu = document.querySelector('.menu');
+
+burger.addEventListener('click', function(e) {
+  	menu.classList.add('active');
+});
+
+let burgerclose = document.querySelector('.burger-menu__close'),
+    menuclose = document.querySelector('.menu');
+
+	burgerclose.addEventListener('click', function(e) {
+		menuclose.classList.remove('active');
+});
