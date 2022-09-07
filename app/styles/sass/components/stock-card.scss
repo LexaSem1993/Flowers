@@ -1,6 +1,6 @@
 .stock-card, 
-    .sale-card, 
-    .present-card{
+.sale-card, 
+.present-card{
         margin-bottom: 140px;
         &__container{
             position: relative;
@@ -170,3 +170,13 @@
             height: 27px;
         }
     } 
+@media (max-width:768px) {
+.stock-card, 
+.sale-card, 
+.present-card{
+    margin-bottom: 20px;
+        &__title{
+        font-size: 30px;
+        }
+    }
+}
