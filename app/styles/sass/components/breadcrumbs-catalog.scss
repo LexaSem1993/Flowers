@@ -1,0 +1,21 @@
+.breadcrumbs{
+    margin-bottom: 48px;
+    &__list{
+        display: flex;
+    }
+    &__list > &__item:first-child{
+        text-decoration-line: underline;
+    }
+    &__item{
+        margin-right: 26px;
+    }
+    &__link{
+        display: block;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #828282;
+        opacity: 0.5;
+    }
+}

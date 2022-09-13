@@ -1,0 +1,47 @@
+.pagination{
+    margin: 90px auto 113px;
+    &__list{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link{
+        font-family: "Euclid Circular B",sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 18px;
+        color: #B0B9C0;
+        padding: 19px 25px;
+        border-radius: 4px;
+    }
+    &__link:hover{
+        background-color: #D6C5CF;
+        color: #fff;
+    }
+    &__carrent{
+        background-color: #D6C5CF;
+        color: #fff;
+        cursor:auto;
+    }
+
+    &__button-prev,
+    &__button-next{
+        padding: 0;
+    }
+    &__button-prev:hover,
+    &__button-next:hover{
+        background-color: transparent;
+    }
+    &__button-prev{
+        content: url(../images/prev2.svg);
+        opacity: 0.4;
+        cursor:auto;
+        margin-right: 40px;
+    }
+    &__button-next{
+        content: url(../images/prev2.svg);
+        transform: rotate(180deg);
+        margin-left: 30px;
+    }
+}

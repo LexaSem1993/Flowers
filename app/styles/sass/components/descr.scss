@@ -1,0 +1,36 @@
+.descr{
+    margin-bottom: 85px;
+    &__container{
+        background: #FBF9FA;
+    }
+    &__info{
+        padding: 104px 98px 90px;
+    }
+    &__text{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 250;
+        font-size: 16px;
+        line-height: 30px;
+        color: #333;
+    }
+    &__text-title{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: #956D84;
+        text-align: center;
+        margin: 98px 0 78px;
+    }
+    &__text-link{
+        font-family: "Euclid Circular B",sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #956D84;
+        text-decoration-line: underline;
+        text-align: center;
+        margin-top: 82px;
+    }
+}

@@ -67,7 +67,8 @@ a{
     text-decoration: none;
 }
 select{
-    cursor: pointer
+    cursor: pointer;
+    border: none;
 }
 .btn{
     border: none;
@@ -84,6 +85,34 @@ img{
 .footer{
     background-color:#333333; 
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.main-catalog{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+    &__blocks{
+        display: flex;
+        width: 100%;
+    }
+    &__right-block{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1060px;
+        margin-left: auto
+    }
+}
 @import "./components/header-top";
 @import "./components/header-bottom";
 @import "./components/banner";
@@ -95,3 +124,11 @@ img{
 @import "./components/map";
 @import "./components/footer-top";
 @import "./components/footer-bottom";
+@import "./components/breadcrumbs-catalog";
+@import "./components/title-catalog";
+@import "./components/category";
+@import "./components/filter";
+@import "./components/cards";
+@import "./components/button-more";
+@import "./components/pagination";
+@import "./components/descr";

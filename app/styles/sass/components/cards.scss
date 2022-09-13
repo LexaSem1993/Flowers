@@ -1,0 +1,9 @@
+.cards{
+    margin-bottom: 75px;
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 27px;
+    }
+}
