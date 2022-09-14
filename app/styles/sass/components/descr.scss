@@ -34,3 +34,14 @@
         margin-top: 82px;
     }
 }
+@media (max-width:900px) {
+    .descr{
+        &__info{
+            padding: 34px 15px 27px;
+        }
+        &__text-title{
+            font-size: 20px;
+            line-height: 18px;
+        }
+    }
+}

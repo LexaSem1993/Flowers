@@ -34,4 +34,76 @@
         color: #828282;
         color: #333;
     }
+    &__block-btn{
+        display: none;
+    }
+    .menu-filter{
+        display: none;
+    }
+}
+@media (max-width:1342px){
+    .filter{
+        margin-bottom: 50px;
+        &__list{
+            display: none;
+        }
+        &__block-btn{
+            display: flex;
+            justify-content: space-around;
+        }
+        &__button{
+            border: 1px solid #956D84;
+            border-radius: 5px;
+            font-family: "Museo Sans Cyrl", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__button-first{
+            position: relative;
+            padding: 13px 40px 13px 55px;
+            background-color: #956D84;
+            box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+            color: #fff;
+        }
+        &__button-first::before{
+            position: absolute;
+            content: url(../images/filtre.svg);
+            left: 35px;
+        }
+        &__button-two{
+            padding: 13px;
+            color: #956D84;
+        }
+        .menu-filter {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            position: fixed;
+            transform: translateX(-100%);
+            top: 0;
+            left: 0;
+            transition: transform .3s ease-in;
+            z-index: 10;
+            overflow: auto;
+          }
+        .active{
+            transform: translateX(0%);
+            transition: transform .3s ease-in;
+          }
+        .menu-filter .burger-menu {
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            background: #333;
+            position: absolute;
+            left: calc(100%);
+            top: 10px;
+            cursor: pointer;
+          }
+        &__burger-menu-colors{
+            margin: 35px 0;
+        }
+    }
 }

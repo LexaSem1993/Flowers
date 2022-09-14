@@ -118,4 +118,14 @@
         font-weight: 700;
       }
 }
+@media (max-width:1342px) {
+    .category{
+        display: none;
+    }
+    .main-catalog{
+        &__right-block{
+            margin: 0 auto;
+        }
+    }
+}
 

@@ -121,6 +121,28 @@ let burgerclose = document.querySelector('.burger-menu__close'),
 	burgerclose.addEventListener('click', function(e) {
 		menuclose.classList.remove('active');
 });
+
+
+
+let burgerfilter = document.querySelector('.filter__button-first'),
+    menufilter = document.querySelector('.menu-filter');
+
+burgerfilter.addEventListener('click', function(e) {
+  	menufilter.classList.add('active');
+});
+
+let burgerfilterclose = document.querySelector('.close-filter'),
+    menufilterclose = document.querySelector('.menu-filter');
+
+	burgerfilterclose.addEventListener('click', function(e) {
+		menufilterclose.classList.remove('active');
+});
+
+
+
+
+
+
 /* Аккордион */
 function initAcc(elem, option){
     document.addEventListener('click', function (e) {
