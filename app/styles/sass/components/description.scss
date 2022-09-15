@@ -1,0 +1,71 @@
+.description{
+    margin-left: 117px;
+    &__list-breadcrumbs{
+        display: flex;
+    }
+    &__link-breadcrumbs{
+        position: relative;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 250;
+        font-size: 16px;
+        line-height: 18px;
+        color: #BDBDBD;
+        padding-right: 35px;
+        align-items: center;
+    }
+    &__link-breadcrumbs::before{
+        content: url(../images/arrow.svg);
+        position: absolute;
+        right: 0;
+        top: 2px;
+    }
+    &__title{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: #333;
+        margin-top: 25px;
+    }
+    &__block{
+        display: flex;
+        margin-top: 39px;
+    }
+    &__status{
+        margin-right: 62px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color:#828282;
+    }
+    &__stars{
+        display: flex;
+    }
+    &__star{
+        background-image: url(../images/star1.svg);
+        width: 15px;
+        height: 15px;
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__new-price{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: #956D84;
+        margin-right: 29px;
+    }
+    &__old-price{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 26px;
+        color: #BDBDBD;
+        text-decoration-line: line-through;
+    }
+}

@@ -127,8 +127,8 @@ let burgerclose = document.querySelector('.burger-menu__close'),
 let burgerfilter = document.querySelector('.filter__button-first'),
     menufilter = document.querySelector('.menu-filter');
 
-burgerfilter.addEventListener('click', function(e) {
-  	menufilter.classList.add('active');
+	burgerfilter.addEventListener('click', function(e) {
+  		menufilter.classList.add('active');
 });
 
 let burgerfilterclose = document.querySelector('.close-filter'),
