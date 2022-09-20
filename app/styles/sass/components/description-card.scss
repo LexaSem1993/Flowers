@@ -1,0 +1,334 @@
+.description-card{
+    margin-left: 117px  ;
+    &__list-breadcrumbs{
+        display: flex;
+    }
+    &__link-breadcrumbs{
+        position: relative;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 250;
+        font-size: 16px;
+        line-height: 18px;
+        color: #BDBDBD;
+        padding-right: 35px;
+        align-items: center;
+    }
+    &__link-breadcrumbs::before{
+        content: url(../images/arrow.svg);
+        position: absolute;
+        right: 0;
+        top: 2px;
+    }
+    &__title{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: #333;
+        margin-top: 25px;
+    }
+    &__block{
+        display: flex;
+        margin-top: 39px;
+    }
+    &__status{
+        margin-right: 62px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color:#828282;
+    }
+    &__stars{
+        display: flex;
+        align-items: center;
+    }
+    &__star{
+        background-image: url(../images/star1.svg);
+        width: 15px;
+        height: 15px;
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__new-price{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: #956D84;
+        margin-right: 29px;
+    }
+    &__old-price{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 26px;
+        color: #BDBDBD;
+        text-decoration-line: line-through;
+    }
+    &__features{
+        display: flex;
+        margin-top: 60px;
+    }
+    &__features-titles,
+    &__depictions{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-family: "Euclid Circular B", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    &__depictions{
+        margin-left: 23px;
+    }
+    &__feature-title{
+        color: #BDBDBD;
+    }
+    &__depiction{
+        color:#333
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 56px;
+    }
+    &__number {
+        position: relative;
+        width: 105px;
+    }
+    &__number input[type="number"] {
+        font-family: "Euclid Circular B",sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+        display: block;
+        height: 63px;
+        width: 100%;
+        padding: 0;
+        padding-left: 15px;
+        margin: 0;
+        box-sizing: border-box;
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+        border: 1px solid #956D84;
+    }
+    .number input[type="number"]::-webkit-outer-spin-button,
+    .number input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+    }
+    &__number-minus {
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        width: 34px;
+        padding: 0;
+        display: block;
+        text-align: center;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    &__minus-img{
+        position: absolute;
+        top: 24px;
+        left: 12px;
+        transform: rotate(180deg);
+    }
+    &__plus-img{
+        position: absolute;
+        top: 24px;
+        right: 12px;
+    }
+    &__number-plus {
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        bottom: 1px;
+        width: 34px;
+        padding: 0;
+        display: block;
+        text-align: center;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    &__add-card{
+        padding: 22px 70px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        background-color: #956D84;
+        color: #fff;
+        border-radius: 7px;
+        box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+        margin-left: 34px;
+    }
+    &__quick-order{
+        margin-top: 45px;
+    }
+    &__quick-order-title{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #828282;
+        margin-bottom: 13px;
+    }
+    &__legend-quick-order{
+        font-family: "Euclid Circular B",sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #BDBDBD;
+        margin-left: 61px;
+    }
+    &__input-quick-order{
+        border: none;
+        width: 329px;
+        height: 40px;
+    }
+    input[type="tel"]{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__form{
+        display: flex;
+        position: relative;
+    }
+    &__form-quick-order{
+        width: 321px;
+        height: 68px;
+        border: 1px solid #E0E0E0;
+    }
+    &__quick-order-btn{
+        position: absolute;
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+        background-color: #956D84;
+        padding: 21px 35px;
+        top: 8px;
+        right: -15px;
+        box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 0 5px 5px 0;
+    }
+    &__product-card-tabs{
+        display: flex;
+        gap: 66px;
+        margin-top: 48px;
+    }
+    &__title-tabs{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__list-information,
+    &__list-delivery{
+        width: 124px;
+    }
+    .accordion{
+        display: flex;
+        flex-direction: column;
+        max-width: 124px;
+        height: auto;
+        .a-container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 5px;
+            position: relative;
+            .a-btn{
+                margin: 0;
+                position: relative;
+                padding: 15px 0;
+                width: 100%;
+                color: #828282;
+                display: block;
+                font-weight: 700;
+                text-align: left;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                border-radius: 5px;
+                span{
+                    display: block;
+                    position: absolute;
+                    height: 14px;
+                    width: 14px;
+                    right: 0px;
+                    top: 18px;
+                    &:after{
+                        content: '';
+                        width: 14px;
+                        height: 3px;
+                        border-radius: 2px;
+                        background-color: #956D84;
+                        position: absolute;
+                        top: 6px;
+                    }
+                    &:before{
+                        content: '';
+                        width: 14px;
+                        height: 3px;
+                        border-radius: 2px;
+                        background-color: #956D84;
+                        position: absolute;
+                        top: 6px;
+                        transform: rotate(90deg);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+            .a-panel{     
+                position: absolute;  
+                left: 0;
+                top: 70px;
+                color: #828282;
+                transition: all 0.2s ease-in-out;
+                opacity: 0;
+                height: auto;
+                max-height: 0;
+                overflow: hidden;
+                width: 728px; 
+                font-family: "Museo Sans Cyrl", sans-serif;
+                font-weight: 250;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &.active{
+                .a-btn{
+                    color: #956D84;
+                    span{
+                        &::before{
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+                .a-panel{  
+                    position: absolute; 
+                    opacity: 1;
+                    max-height: 500px; 
+                    width: 728px;           
+                }
+                .a-panel1{
+                    left:-190px;
+                }
+                .a-panel2{
+                    left:-380px;
+                }
+            }
+        }
+    }
+}

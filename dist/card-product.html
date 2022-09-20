@@ -375,24 +375,82 @@
         </li>
     </ul>
 </section>
-<section class="description">
-    <ul class="description__list-breadcrumbs">
-        <li class="description__item-breadcrumbs"><a class="description__link-breadcrumbs">Букеты из тюльпанов</a></li>
+<section class="description-card">
+    <ul class="description-card__list-breadcrumbs">
+        <li class="description-card__item-breadcrumbs"><a class="description-card__link-breadcrumbs">Букеты из тюльпанов</a></li>
     </ul>
-    <h2 class="description__title">25 желтых тюльпанов</h2>
-    <div class="description__block">
-        <p class="description__status">В наличии</p>
-        <div class="description__stars">
-            <span class="description__star"></span>
-            <span class="description__star"></span>
-            <span class="description__star"></span>
-            <span class="description__star"></span>
-            <span class="description__star"></span>
+    <h2 class="description-card__title">25 желтых тюльпанов</h2>
+    <div class="description-card__block">
+        <p class="description-card__status">В наличии</p>
+        <div class="description-card__stars">
+            <span class="description-card__star"></span>
+            <span class="description-card__star"></span>
+            <span class="description-card__star"></span>
+            <span class="description-card__star"></span>
+            <span class="description-card__star"></span>
         </div>
     </div>
-    <div class="description__price">
-        <b class="description__new-price">795.00грн.</b>
-        <p class="description__old-price">995.00грн.</p>
+    <div class="description-card__price">
+        <b class="description-card__new-price">795.00грн.</b>
+        <p class="description-card__old-price">995.00грн.</p>
+    </div>
+    <div class="description-card__features">
+        <div class="description-card__features-titles">
+            <p class="description-card__feature-title">Цвет</p>
+            <p class="description-card__feature-title">Размер</p>
+            <p class="description-card__feature-title">Материалы</p>
+            <p class="description-card__feature-title">Дополнительно</p>
+        </div>
+        <div class="description-card__depictions">
+            <p class="description-card__depiction">25 желтых тюльпанов</p>
+            <p class="description-card__depiction">50-60 см</p>
+            <p class="description-card__depiction">Декоративный флористический материал</p>
+            <p class="description-card__depiction">Оформление</p>
+        </div>
+    </div>
+    <div class="description-card__buttons">
+        <div class="description-card__number">
+            <button class="description-card__number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img class="description-card__minus-img" src="./images/arrow3.svg" alt="Плюс"></button>
+            <input type="number" min="0" value="1" readonly>
+            <button class="description-card__number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img class="description-card__plus-img" src="./images/arrow3.svg" alt="Плюс"></button>
+        </div>
+        <button class="description-card__add-card btn">В корзину</button>
+    </div>
+    <div class="description-card__quick-order">
+        <h3 class="description-card__quick-order-title">Быстрый заказ</h3>
+        <div class="description-card__form">
+            <fieldset class="description-card__form-quick-order">
+                <legend class="description-card__legend-quick-order">Номер телефона</legend>
+                <input class="description-card__input-quick-order" type="tel" name="Телефон" alt="+380" placeholder="+380">
+            </fieldset>
+            <button class="description-card__quick-order-btn btn">Быстрый заказ</button>
+        </div>
+    </div>
+    <div class="description-card__product-card-tabs">
+        <ul class="description-card__list-delivery accordion v1">
+            <li class="description-card__item-delivery description-card__item-title a-container">
+                <p class="description-card__title-delivery description-card__title-tabs a-btn">Доставка <span></span></p>
+                <div class="a-panel"> 
+                    <p class="description-card__text">Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="description-card__list-information accordion v1">
+            <li class="description-card__item-information description-card__item-title a-container active">
+                <p class="description-card__title-information description-card__title-tabs a-btn">Описание <span></span></p>
+                <div class="a-panel a-panel1"> 
+                    <p class="description-card__text">Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="description-card__list-information accordion v1">
+            <li class="description-card__item-information description-card__item-title a-container">
+                <p class="description-card__title-information description-card__title-tabs a-btn">Отзывы(12) <span></span></p>
+                <div class="a-panel a-panel2"> 
+                    <p class="description-card__text">Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!</p>
+                </div>
+            </li>
+        </ul> 
     </div>
 </section>
         </div>
