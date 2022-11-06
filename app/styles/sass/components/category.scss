@@ -1,13 +1,13 @@
-.accordion-catalog{
+.accordion{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    .b-container{
+    .a-container{
         display: flex;
         flex-direction: column;
         width: 100%;
-        .b-btn{
+        .a-btn{
             margin: 0;
             position: relative;
             padding: 15px 0;
@@ -46,7 +46,7 @@
                 }
             }
         }
-        .b-panel{
+        .a-panel{
             width: 100%;       
             color: #fff;
             transition: all 0.2s ease-in-out;
@@ -58,14 +58,14 @@
 
 
         &.active{
-            .b-btn{
+            .a-btn{
                 span{
                     &::before{
                         transform: rotate(0deg);
                     }
                 }
             }
-            .b-panel{
+            .a-panel{
                 opacity: 1;
                 max-height: 1000px;              
             }

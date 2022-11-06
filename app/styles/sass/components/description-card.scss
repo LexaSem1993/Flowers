@@ -77,14 +77,17 @@
     &__depictions{
         display: flex;
         flex-direction: column;
-        gap: 24px;
         font-family: "Euclid Circular B", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
     }
+    &__features-titles{
+        gap: 24px;
+    }
     &__depictions{
         margin-left: 23px;
+        gap:24px;
     }
     &__feature-title{
         color: #BDBDBD;
@@ -110,7 +113,6 @@
         height: 63px;
         width: 100%;
         padding: 0;
-        padding-left: 15px;
         margin: 0;
         box-sizing: border-box;
         -moz-appearance: textfield;
@@ -211,14 +213,14 @@
         border: 1px solid #E0E0E0;
     }
     &__quick-order-btn{
-        position: absolute;
         font-family: "Museo Sans Cyrl", sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 18px;
         color: #fff;
         background-color: #956D84;
-        padding: 21px 35px;
+        margin-top: 9px;
+        padding: 20px 35px;
         top: 8px;
         right: -15px;
         box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
@@ -300,8 +302,8 @@
                 opacity: 0;
                 height: auto;
                 max-height: 0;
+                width: 728px;
                 overflow: hidden;
-                width: 728px; 
                 font-family: "Museo Sans Cyrl", sans-serif;
                 font-weight: 250;
                 font-size: 16px;
@@ -319,8 +321,7 @@
                 .a-panel{  
                     position: absolute; 
                     opacity: 1;
-                    max-height: 500px; 
-                    width: 728px;           
+                    max-height: 500px;           
                 }
                 .a-panel1{
                     left:-190px;
@@ -331,4 +332,113 @@
             }
         }
     }
+}
+@media (max-width:1440px) {
+    .description-card{
+        &__text{
+            width: 500px;
+        }
+        .accordion{     
+            .a-panel{     
+                max-width: 500px; 
+            }
+            &.active{
+                .a-panel{
+                    min-width: 500px;           
+                }
+            }
+        }
+    }
+}
+@media (max-width:1247px) {
+    .description-card{
+        margin-left: 50px;
+        &__quick-order-btn{
+            padding: 20px;
+        }
+    }
+}
+@media (max-width:1023px){
+    .description-card{
+        margin-left: 0;
+        &__link-breadcrumbs{
+            display: none;
+        }
+    }
+}
+ @media (max-width:534px){
+     .description-card{
+         &__product-card-tabs{
+            gap: 5px;
+         }
+         &__text{
+            width: 300px;
+        }
+        &__title-tabs{
+            font-size: 16px;
+         }
+        .accordion{
+             max-width: 120px;
+             .a-container{
+                .a-panel{
+                    max-width: 300px;           
+                }
+                &.active{
+                    .a-panel{
+                       min-width: 300px;           
+                   }
+                    .a-panel1{
+                       left:-120px;
+                    }
+                    .a-panel2{
+                       left:-250px;
+                    }
+                }
+             }
+            }
+        &__form-quick-order{
+            width: 210px;
+        }
+        &__input-quick-order{
+            width: auto;
+        }
+        &__quick-order-btn{
+             padding: 10px;
+        }
+        &__features-titles{
+            gap: 30px;
+        }
+    }
+}
+@media (max-width:407px){
+    .description-card{
+        &__title-tabs{
+           font-size: 14px;
+        }
+        &__list-information,
+        &__list-delivery{
+        width: 100px;
+    }
+    .accordion{
+        max-width: 100px;
+        .a-container{
+            &.active{
+                .a-panel1{
+                   left:-100px;
+                }
+                .a-panel2{
+                   left:-210px;
+                }
+            }
+        }
+    }
+    &__add-card{
+        padding: 20px 50px 20px 50px;
+    }
+    &__quick-order-btn{
+        padding: 5px;
+        font-size: 14px;
+   }
+   
+}
 }
