@@ -1,0 +1,11 @@
+.main-basket{
+    &__container{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    &__blocks{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
