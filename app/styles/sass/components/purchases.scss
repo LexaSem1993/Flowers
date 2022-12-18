@@ -3,7 +3,9 @@
     &__characteristics-list{
         max-width: 979px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding-left: 168px;
+        padding-right: 155px;
     }
     &__characteristics-item:nth-child(2){
         margin-left: 182px;
@@ -19,6 +21,132 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
+        color: #BDBDBD;
+    }
+    &__number {
+        position: relative;
+        width: 105px;
+    }
+    &__number input[type="number"] {
+        font-family: "Euclid Circular B",sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        display: block;
+        height: 42px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+        border: 1px solid #956D84;
+    }
+    .number input[type="number"]::-webkit-outer-spin-button,
+    .number input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+    }
+    .number input[type="number"]{
+        width: 94px;
+    }
+    &__number-minus {
+        position: absolute;
+        top: 0px;
+        bottom: 1px;
+        width: 24px;
+        padding: 0;
+        display: block;
+        text-align: center;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: transparent;
+        height: 42px;
+    }
+    &__minus-img{
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        transform: rotate(180deg);
+    }
+    &__plus-img{
+        position: absolute;
+        top: 15px;
+        right: 12px;
+    }
+    &__number-plus {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 1px;
+        width: 34px;
+        padding: 0;
+        display: block;
+        text-align: center;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: transparent;
+        height: 42px;
+    }
+    &__product-list{
+        display: flex;
+        flex-direction: column;
+        max-width: 979px;
+        margin-top: 11px;
+        gap: 15px;
+    }
+    &__product-item{
+        display:flex;
+        align-items: center;
+        align-content: center;
+        border: solid 1px #956D84;
+        padding: 26px 30px
+    }
+    &__product-title{
+        margin-left: 67px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333;
+    }
+    &__product{
+        margin-left: 96px;
+    }
+    &__number{
+        margin-left: 120px;
+        width: 94px;
+        height: 42px;
+    }
+    &__product-total{
+        margin-left: 86px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333;
+    }
+    &__product-svg-delete{
+        margin-left: auto;
+        margin-right: 22px;
+    }
+    &__product-price-new{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333;
+    }
+    &__product-price-old{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration-line: line-through;
         color: #BDBDBD;
     }
 }
