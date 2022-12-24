@@ -1,5 +1,7 @@
 .purchases{
+    display: flex;
     margin-top: 99px;
+    justify-content: space-between;
     &__characteristics-list{
         max-width: 979px;
         display: flex;
@@ -148,5 +150,97 @@
         line-height: 18px;
         text-decoration-line: line-through;
         color: #BDBDBD;
+    }
+    &__order{
+        width: 415px;
+        margin-left: auto;
+    }
+    &__order-link{
+        font-family: "Euclid Circular B", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        align-items: center;
+        text-align: end;
+        text-decoration-line: underline;
+        color: #BDBDBD;
+        margin-bottom: 11px;
+    }
+    &__your-order{
+        border: 1px solid #956D84;
+        padding: 55px 83px 31px 71px;
+    }
+    &__your-order-price{
+        margin-bottom: 32px;
+    }
+    &__your-order-title{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        color: #956D84;
+        letter-spacing: -0.025em;
+        margin-bottom: 70px;
+    }
+    &__your-order-product,
+    &__your-order-discount{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__your-order-product-title,
+    &__your-order-discount-title{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #BDBDBD;
+        margin-bottom: 32px;
+    }
+    &__your-order-discount-price,
+    &__your-order-product-price{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333;
+    }
+    &__your-order-result{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 63px;
+    }
+    &__result-title{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 18px;
+        color: #333;
+    }
+    &__result-price{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 18px;
+        color: #333;
+    }
+    &__arrange{
+        display: block;
+        background: #956D84;
+        box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 7px;
+        font-family: "Euclid Circular B", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__arrange-link{
+        padding: 22px 46px;
+        color: #fff;
     }
 }
