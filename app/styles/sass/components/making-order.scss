@@ -1,18 +1,27 @@
 .making-order{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
     &__list{
         max-width: 976px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         gap: 17px;
+        margin-bottom: 39px;
     }
     &__item:first-child{
         grid-column: 1 / -1;
         grid-row: 1 / 2;
+        max-width: 976px;
     }
     &__item:nth-child(2){
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        max-width: 480px;
+    }
+    &__item:nth-child(3){
+        max-width: 479px;
     }
     &__name:nth-child(2n){
         margin-left: 60px;
@@ -29,9 +38,13 @@
         line-height: 18px;
         color: #333333;
     }
-    &__block1{
+    &__block1,
+    &__block2{
         display: flex;
         flex-wrap: wrap;
+    }
+    &__block2{
+        margin-bottom: 185px;
     }
     &__name{
         width: 415px;
@@ -54,15 +67,157 @@
         font-size: 18px;
         line-height: 18px;
         color: #333333;
-        width: 100%;
+        width: 392px;
         border: none;
         height: 50px;
-        padding: 0 35px;
+        padding: 0 0 0 35px;
     }
     &__tel{
         margin-left: 0;
         border: 1px solid #E0E0E0;
         width: 397px;
         margin-top: 43px;
+    }
+    &__delivery-list{
+        margin-top: 39px;
+    }
+    &__control{
+        position: relative;
+        display: block;
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+    &__control-mark {
+        position: absolute;
+        border: 2px solid #956D84;
+        border-radius: 2px;
+        padding: 6px;
+        top: -1px;
+        left: 1px;
+    }
+    &__control-input[type="checkbox"]:checked + &__control-mark::before {
+        position: absolute;
+        content: url(../images/tick1.svg);
+        top: -2px;
+        left: -1px;
+        border-radius: 2px;
+    }
+    &__control-input[type="checkbox"]:checked + &__control-mark::before{
+        background-color: #956D84;
+        width: 15px;
+        height: 15px;
+    }
+    &__control-label{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+    &__block3{
+        border: 1px solid #956D84;
+        padding: 39px 41px 39px 45px;
+        margin-left: 31px;
+        height: min-content;
+    }
+    &__your-order{
+        width: 100%;
+    }
+    &__your-order-title{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 18px;
+        color: #956D84;
+    }
+    &__your-order-price{
+        margin-top: 39px;
+    }
+    &__your-order-product,
+    &__your-order-discount,
+    &__your-dop,
+    &__your-order-result{
+        display: flex;
+        max-width: 329px;
+        margin-bottom: 20px;
+    }
+    &__your-dops,
+    &__your-order-result,
+    &__arrange{
+        margin-top: 40px;
+    }
+    &__your-order-product-title{
+        font-family: "Euclid Circular B",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #BDBDBD;
+        width: 160px;
+        margin-right: 48px;
+    }
+    &__your-order-product-price,
+    &__your-order-product-amount{
+        font-family: "Euclid Circular B",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+    }
+    &__your-order-product-price,
+    &__your-dop-price,
+    &__result-price{
+        margin-left: auto;
+    }
+    &__your-dop-title,
+    &__your-dop-price{
+        font-family: "Euclid Circular B",sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+    }
+    &__result-title{
+        font-family: "Euclid Circular B",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 18px;
+        color: #333333;
+    }
+    &__result-price{
+        font-family: "Euclid Circular B",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 18px;
+        color: #333333;
+    }
+    &__arrange{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__arrange-link{
+        padding: 22px 46px;
+        background-color: #956D84;
+        box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 7px;
+        font-family: "Euclid Circular B", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    &__coupon,
+    &__certificate{
+        margin-left: 31px;
+        width: 415px;
     }
 }

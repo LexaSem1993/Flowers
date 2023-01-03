@@ -32,7 +32,7 @@
             </li>
             <li class="making-order__item">
                 <h2 class="making-order__title">2. Контакты отправителя</h2>
-                <div class="making-order__block1">
+                <div class="making-order__block2">
                     <fieldset class="making-order__tel">
                         <legend class="making-order__sub-title">Имя *</legend>
                         <input class="making-order__input" type="text" placeholder=" " tabindex="7">
@@ -42,13 +42,114 @@
                         <input class="making-order__input" type="number" placeholder=" " tabindex="8">
                     </fieldset>
                     <fieldset class="making-order__tel">
-                        <legend class="making-order__sub-title">Телефон *</legend>
-                        <input class="making-order__input" type="number" placeholder=" " tabindex="8">
+                        <legend class="making-order__sub-title">Email *</legend>
+                        <input class="making-order__input" type="number" placeholder=" " tabindex="9">
                     </fieldset>
             </li>
             <li class="making-order__item">
                 <h2 class="making-order__title">3. Детали доставки</h2>
+                <ul class="making-order__delivery-list">
+                    <li class="making-order__delivery-item">
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden" type="checkbox" checked name="delivery">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Доставка с сюрпризом</span>
+                        </label>
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden" checked type="checkbox" name="foto">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Фотоотчет (+ 15 грн)</span>
+                        </label>
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden" type="checkbox" name="vaza">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Добавить вазу (+ 249 грн)</span>
+                        </label>
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden"  type="checkbox" name="event">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Напомнить о событии</span>
+                        </label>
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden" checked type="checkbox" name="card">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Открытка</span>
+                        </label>
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden" checked type="checkbox" name="busines card">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Визитка</span>
+                        </label>
+                        <label class="making-order__control">
+                            <input class="making-order__control-input visually-hidden" checked type="checkbox" name="more card">
+                            <span class="making-order__control-mark"></span>
+                            <span class="making-order__control-label">Полномаштабная открытка (+ 79 грн)</span>
+                        </label>
+                        <fieldset class="making-order__tel">
+                            <legend class="making-order__sub-title">Повод для открытки</legend>
+                            <input class="making-order__input" type="text" placeholder=" " tabindex="10">
+                        </fieldset>
+                        <fieldset class="making-order__tel">
+                            <legend class="making-order__sub-title">Текст открытки</legend>
+                            <input class="making-order__input" type="text" placeholder="До 70 символов" tabindex="11">
+                        </fieldset>
+                    </li>
+                </ul>
             </li>
         </ul>
+            <div class="making-order__your-order">
+                <div class="making-order__block3">
+                    <h2 class="making-order__your-order-title">Ваш заказ</h2>
+                    <div class="making-order__your-order-price">
+                        <div class="making-order__your-order-product">
+                            <p class="making-order__your-order-product-title">25 желтых тюлпанов</p>
+                            <div class="making-order__your-order-product-amount">2</div>
+                            <div class="making-order__your-order-product-price">5 558 ₴</div>
+                        </div>
+                        <div class="making-order__your-order-product">
+                            <p class="making-order__your-order-product-title">25 розовых тюльпанов</p>
+                            <div class="making-order__your-order-product-amount">2</div>
+                            <div class="making-order__your-order-product-price">254 ₴</div>
+                        </div>
+                        <div class="making-order__your-order-product">
+                            <p class="making-order__your-order-product-title">Мечтательница</p>
+                            <div class="making-order__your-order-product-amount">1</div>
+                            <div class="making-order__your-order-product-price">254 ₴</div>
+                        </div>
+                    </div>
+                    <div class="making-order__your-dops">
+                        <div class="making-order__your-dop">
+                            <p class="making-order__your-dop-title">Сумма заказа</p>
+                            <div class="making-order__your-dop-price">6000 ₴</div>
+                        </div>
+                        <div class="making-order__your-dop">
+                            <p class="making-order__your-dop-title">Доставка</p>
+                            <div class="making-order__your-dop-price">100 ₴</div>
+                        </div>
+                        <div class="making-order__your-dop">
+                            <p class="making-order__your-dop-title">Фотоотчет</p>
+                            <div class="making-order__your-dop-price">15 ₴</div>
+                        </div>
+                    </div>
+                    <div class="making-order__your-order-result">
+                        <p class="making-order__result-title">Всего</p>
+                        <div class="making-order__result-price">5 304 ₴</div>
+                    </div>
+                    <button class="making-order__arrange btn">
+                        <a class="making-order__arrange-link" href="#"> Оформить заказ </a>
+                    </button>
+                </div>
+                <fieldset class="making-order__tel making-order__coupon">
+                    <legend class="making-order__sub-title">Купон</legend>
+                    <input class="making-order__input" type="text" placeholder="Введите код купона" tabindex="12">
+                </fieldset>
+                <fieldset class="making-order__tel making-order__certificate">
+                    <legend class="making-order__sub-title">Подарочный сертификат</legend>
+                    <input class="making-order__input" type="number" placeholder="Введите номер подарочного сертификата" tabindex="13">
+                </fieldset>
+                <button class="making-order__arrange btn">
+                    <a class="making-order__arrange-link" href="#"> Применить </a>
+                </button>
+            </div>
     </div>
-</section>  
+</section>  gulp 
