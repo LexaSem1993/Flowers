@@ -1,0 +1,10 @@
+.main-forum{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__blocks{
+        margin: 0 auto;
+    }
+}

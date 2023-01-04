@@ -1,0 +1,99 @@
+.answers{
+    &__info,
+    &__link-information{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 18px;
+        line-height: 30px;
+        color: #333333;
+    }
+    
+    .accordion{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .a-container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #956D84;
+            .a-btn{
+                font-family: "Museo Sans Cyrl",sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 18px;
+                margin: 0;
+                position: relative;
+                padding: 30px 65px;
+                width: 100%;
+                color: #fff;
+                display: block;
+                font-weight: 700;
+                text-align: left;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                border-radius: 5px;
+                span{
+                    display: block;
+                    position: absolute;
+                    height: 14px;
+                    width: 14px;
+                    right: 40px;
+                    top: 18px;
+                    &:after{
+                        content: '';
+                        width: 14px;
+                        height: 3px;
+                        border-radius: 2px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 6px;
+                    }
+                    &:before{
+                        content: '';
+                        width: 14px;
+                        height: 3px;
+                        border-radius: 2px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 6px;
+                        transform: rotate(90deg);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+            .a-panel{
+                width: 100%;       
+                color: #000;
+                transition: all 0.2s ease-in-out;
+                opacity: 0;
+                height: auto;
+                max-height: 0;
+                overflow: hidden;
+                padding: 0px 10px;
+                background-color: #fff;
+            }
+            &.active{
+                .a-btn{
+                    color: #fff;
+                    span{
+                        &::before{
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+                .a-panel{               
+                    padding: 15px 10px 10px 10px;
+                    opacity: 1;
+                    max-height: 500px;              
+                }
+            }
+        }
+    }
+    &__desktop{
+        display: none;
+    }
+}
