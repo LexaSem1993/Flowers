@@ -1,0 +1,69 @@
+.swiper-reviews {
+    display: flex;
+    height:890px;
+    margin-bottom: 86px;
+    .swiper-reviews__slide {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 30px 26px 23px 26px;
+    border: 1px solid #956d84;
+  }
+  .js-swiper-reviews-button-next,
+  .js-swiper-reviews-button-prev {
+    top: 870px;
+  }
+    &__block1 {
+    display: flex;
+    align-items: center;
+  }
+    &__name {
+    margin-left: 25px;
+    font-family: "Museo Sans Cyrl", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+    }
+    &__info {
+    font-family: "Museo Sans Cyrl", sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    margin-top: 24px;
+    }
+    &__all-review {
+    font-family: "Museo Sans Cyrl", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #bdbdbd;
+    margin-top: 25px;
+    }
+    &__block2 {
+    display: flex;
+    margin-top: 20px;
+    }
+    &__stars {
+    display: flex;
+    }
+    &__star {
+    content: url(/images/star.png);
+    background-position: center;
+    height: 17px;
+    width: 17px;
+  }
+    &__date {
+    margin-left: auto;
+    font-family: "Euclid Circular B", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #bdbdbd;
+  }
+}

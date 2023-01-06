@@ -107,6 +107,17 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+  var swiper4 = new Swiper(".js-swiper-reviews", {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: ".js-swiper-reviews-button-next",
+      prevEl: ".js-swiper-reviews-button-prev",
+    },
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 30,
+  });
 
   let burger = document.querySelector(".burger-menu"),
     menu = document.querySelector(".menu");
@@ -125,8 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let burgerfilter = document.querySelector(".filter__button-first"),
     menufilter = document.querySelector(".menu-filter");
 
-  
-
   let burgerfilterclose = document.querySelector(".close-filter"),
     menufilterclose = document.querySelector(".menu-filter");
 
@@ -135,9 +144,9 @@ document.addEventListener("DOMContentLoaded", () => {
       menufilterclose.classList.remove("active");
     });
 
-	burgerfilter.addEventListener("click", function (e) {
-		menufilter.classList.add("active");
-	  });
+    burgerfilter.addEventListener("click", function (e) {
+      menufilter.classList.add("active");
+    });
   }
 
   /* Аккордион */
