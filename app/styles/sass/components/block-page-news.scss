@@ -1,0 +1,148 @@
+.block-page-news{
+    &__list{
+        display: grid;
+        grid-template-columns: 302px 260px;
+        grid-template-rows: repeat(2, 275px);
+        row-gap: 30px;
+        column-gap: 19px;
+        max-width: 581px;
+        float: left;
+        margin-right: 40px;
+    }
+    &__item:last-child{
+        grid-row: 2/3;
+        grid-column: 2 / 3;
+    }
+    &__subtitle1,
+    &__subtitle2,
+    &__subtitle3{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 18px;
+        color: #956D84;
+    }
+    &__subtitle1{
+        margin-top: 37px;
+        margin-bottom: 41px;
+    }
+    &__subtitle2{
+        margin-top: 48px;
+        margin-bottom: 54px;
+    }
+    &__subtitle3{
+        margin-top: 63px;
+        margin-bottom: 58px;
+    }
+    &__text-points{
+        margin-top: 55px;
+    }
+    &__text{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 16px;
+        line-height: 30px;
+        color: #333333;
+    }
+    &__point{
+        margin-left: 37px;
+        margin-top: 14px;
+        position: relative;
+    }
+    &__point::before{
+        position: absolute;
+        left: -37px;
+        top: 9px;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: #956D84;
+        border-radius: 50%;
+    }
+    &__text-flowers{
+        margin-top: 50px;
+    }
+    &__comment{
+        margin-bottom: 68px;
+    }
+    &__block-comment{
+        display: flex;
+    }
+    &__title-comment{
+        text-align: center;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 18px;
+        color: #333333;
+        margin-top: 63px;
+        margin-bottom: 96px;
+    }
+    &__name{
+        width: 624px;
+        margin-bottom: 42px;
+    }
+    &__button{
+        padding: 23px 52px;
+        background-color: #956D84;
+        box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 7px;
+        font-family: "Euclid Circular B",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    &__columns2-comment{
+        border: 1px solid #956D84;
+        padding: 56px 29px;
+        margin-left: 90px;
+    }
+    &__comment-list{
+        height: 389px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    &__comment-list::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+      }
+    &__comment-list::-webkit-scrollbar-track {
+        background: #8400ff15;        /* color of the tracking area */
+      }
+      
+    &__comment-list::-webkit-scrollbar-thumb {
+        background-color: #956D84;    /* color of the scroll thumb */
+        border-radius: 2px;       /* roundness of the scroll thumb */
+          /* creates padding around scroll thumb */
+        }
+    &__comment-item{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 80px;
+        max-width: 618px;
+        margin-bottom: 20px;
+    }
+    &__name-comment{
+        margin-left: 22px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+    }
+    &__names-comment{
+        margin-left: 52px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 16px;
+        line-height: 20px;
+        color: #828282;
+    }
+}

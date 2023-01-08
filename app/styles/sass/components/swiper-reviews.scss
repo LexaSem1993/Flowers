@@ -1,7 +1,10 @@
 .swiper-reviews {
+  position: relative;
+    width: 1236px;
     display: flex;
-    height:890px;
+    height:830px;
     margin-bottom: 86px;
+    
     .swiper-reviews__slide {
     display: flex;
     flex-direction: column;
@@ -9,10 +12,7 @@
     padding: 30px 26px 23px 26px;
     border: 1px solid #956d84;
   }
-  .js-swiper-reviews-button-next,
-  .js-swiper-reviews-button-prev {
-    top: 870px;
-  }
+  
     &__block1 {
     display: flex;
     align-items: center;
@@ -66,4 +66,18 @@
     line-height: 18px;
     color: #bdbdbd;
   }
+  .swiper-button-next {
+    content: url(../images/next.svg);
+    height: 27px;
+    position: absolute;
+    right: 0px;
+    top: 425px;
+    width: 16px;}
+  .swiper-button-prev {
+    content: url(../images/prev.svg);
+    height: 27px;
+    position: absolute;
+    left: 0px;
+    top: 425px;
+    width: 16px;}
 }

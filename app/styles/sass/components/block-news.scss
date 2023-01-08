@@ -1,0 +1,22 @@
+.block-news{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    &__news{
+        max-width: 460px;
+        margin-bottom: 220px;
+    }
+    &__read-more{
+        margin-top: 24px;
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        transform: rotate(0.13deg);
+    }
+}

@@ -1,0 +1,15 @@
+.main-news{
+    &__container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+    &__blocks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    &__button{
+        margin-top: -150px;
+    }
+}
