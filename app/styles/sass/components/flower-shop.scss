@@ -1,0 +1,58 @@
+.flower-shop{
+    &__list1{
+        float: left;
+        margin-right: 41px;
+        display: grid;
+        grid-template-columns: 302px 260px;
+        grid-template-rows: repeat(2, 275px);
+        row-gap: 30px;
+        column-gap: 19px;
+        margin-bottom: 40px;
+    }
+    &__item:last-child{
+        grid-column: 2 / 3;
+    }
+    &__list2{
+        float: right;
+        display: grid;
+        grid-template-columns: 302px 260px;
+        grid-template-rows: repeat(2, 275px);
+        row-gap: 30px;
+        column-gap: 19px;
+        margin-bottom: 40px;
+        margin-left: 41px;
+    }
+    &__text{
+        font-family: "Museo Sans Cyrl", sans-serif;
+        font-weight: 250;
+        font-size: 16px;
+        line-height: 30px;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    &__circle{
+        position: relative;
+        margin-bottom: 10px;
+        margin-left: 37px;
+    }
+    &__circle::before{
+        content: " ";
+        display: block;
+        background-color: #956D84;
+        position: absolute;
+        left: -40px;
+        top: 8px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    &__subtitle{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 40px;
+        color: #956D84;
+        margin-top: 60px;
+    }
+}

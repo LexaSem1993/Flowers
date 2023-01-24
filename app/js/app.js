@@ -119,6 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 30,
   });
 
+  let dropMenu = document.querySelector(".js-dropmenu");
+
+  dropMenu.addEventListener("click", function () {
+    dropMenu.classList.toggle("active");
+  });
+
   let burger = document.querySelector(".burger-menu"),
     menu = document.querySelector(".menu");
 
