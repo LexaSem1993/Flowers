@@ -1,0 +1,33 @@
+.payment-and-delivery{
+    margin-bottom: 100px;
+    &__circle{
+        margin-left: 20px;
+        position: relative;
+    }
+    &__circle::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: #956D84;
+        border-radius: 50%;
+        left: -20px;
+        top: 10px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 50px;
+        margin-bottom: 65px;
+    }
+    &__subtitle{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 40px;
+        color: #956D84;
+        margin: 50px 0;
+    }
+}
