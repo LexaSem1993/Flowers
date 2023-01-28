@@ -1,0 +1,101 @@
+.gift-client{
+    margin-bottom: 80px;
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1ft);
+        grid-template-rows: repeat(2,1fr);
+        gap: 22px;
+    }
+    &__item{
+        position: relative;
+    }
+    &__item:first-child{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-image: url(../images/gift-img1.jpg);
+        width: 692px;
+        height: 396px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__item:nth-child(2){
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        background-image: url(../images/gift-img2.png);
+        width: 692px;
+        height: 396px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 0.4;
+    }
+    &__item:nth-child(2)::before{
+        position: absolute;
+        content: url(../images/gift-img5.png);
+        right: -60px;
+        bottom: -20px;
+    }
+    &__item:nth-child(3){
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-image: url(../images/gift-img3.jpg);
+        width: 692px;
+        height: 396px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__item:last-child{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background-image: url(../images/gift-img4.png);
+        width: 692px;
+        height: 396px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__item:last-child::before{
+        position: absolute;
+        content: url(../images/gift-img6.png);
+        right: 0px;
+        bottom: 0px;
+    }
+    &__text{
+        font-family: "Museo Sans Cyrl",sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333333;
+        &-first{
+            max-width: 412px;
+            margin-right: 12px;
+            margin-left: auto;
+            margin-top: 76px;
+        }
+        &-two{
+            max-width: 455px;
+            margin-top: 127px;
+            margin-left: 30px;
+        }
+        &-three{
+            max-width: 412px;
+            margin-top: 48px;
+            margin-left: 33px;
+        }
+        &-four{
+            max-width: 400px;
+            margin-top: 150px;
+            margin-left: 31px;
+        }
+    }
+    &__span{
+        &-white{
+            color: #fff;
+        }
+        &-purple{
+            color: #956D84;
+        }
+    }
+}
