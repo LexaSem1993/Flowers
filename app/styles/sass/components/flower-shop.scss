@@ -12,6 +12,10 @@
     &__item:last-child{
         grid-column: 2 / 3;
     }
+    &__img{
+        height: auto;
+        max-width: 100%;
+    }
     &__list2{
         float: right;
         display: grid;
@@ -54,5 +58,37 @@
         line-height: 40px;
         color: #956D84;
         margin-top: 60px;
+    }
+}
+@media (max-width:900px) {
+    .flower-shop{
+        &__list1,
+        &__list2{
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        &__list1,
+        &__list2{
+            display: grid;
+            grid-template-columns: 260px;
+            grid-template-rows: repeat(4, 275px);
+            max-width: 302px;
+        }
+        &__item:nth-child(2){
+            grid-row: 3/4;
+            grid-column: 1 / 2;
+        }
+        &__item:first-child{
+            grid-row: 1/2;
+            grid-column: 1 / 2;
+        }
+        &__item:last-child{
+            grid-row: 4/5;
+            grid-column: 1 / 2;
+        }
+        &__input{
+            width: 400px;
+        }
     }
 }

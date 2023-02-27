@@ -71,13 +71,16 @@
     height: 27px;
     position: absolute;
     right: 0px;
-    top: 425px;
+    top: 420px;
     width: 16px;}
   .swiper-button-prev {
     content: url(../images/prev.svg);
     height: 27px;
     position: absolute;
     left: 0px;
-    top: 425px;
+    top: 420px;
     width: 16px;}
+}
+@media (max-width:1200px) {
+  
 }

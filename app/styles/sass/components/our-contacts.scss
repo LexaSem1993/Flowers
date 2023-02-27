@@ -93,3 +93,16 @@
         margin-top: 52px;
     }
 }
+@media (max-width:1250px) {
+    .our-contacts{
+        flex-direction: column;
+        align-items: center;
+        &__subtitle{
+            font-size: 30px;
+        }
+        &__block-right{
+            margin-right: 0px;
+        }
+    }
+    
+}

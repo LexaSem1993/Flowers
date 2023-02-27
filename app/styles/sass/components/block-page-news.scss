@@ -9,6 +9,10 @@
         float: left;
         margin-right: 40px;
     }
+    &__img{
+        height: auto;
+        max-width: 100%;
+    }
     &__item:last-child{
         grid-row: 2/3;
         grid-column: 2 / 3;
@@ -85,6 +89,9 @@
         width: 624px;
         margin-bottom: 42px;
     }
+    &__input{
+        width: 700px;
+    }
     &__button{
         padding: 23px 52px;
         background-color: #956D84;
@@ -123,7 +130,6 @@
         display: flex;
         align-items: center;
         align-content: center;
-        height: 80px;
         max-width: 618px;
         margin-bottom: 20px;
     }
@@ -144,5 +150,71 @@
         font-size: 16px;
         line-height: 20px;
         color: #828282;
+    }
+}
+@media (max-width:1400px){
+    .block-page-news{
+        &__block-comment{
+            flex-direction: column;
+        }
+        &__columns1-comment{
+            margin: 0 auto;
+        }
+        &__columns2-comment{
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+        &__name{
+            width: 100%;
+        }
+        &__comment-item{
+            max-width: 1000px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__name-comment,
+        &__names-comment{
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width:900px) {
+    .block-page-news{
+        &__list{
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        &__list{
+            display: grid;
+            grid-template-columns: 260px;
+            grid-template-rows: repeat(4, 275px);
+            column-gap: 19px;
+            max-width: 302px;
+        }
+        &__item:nth-child(2){
+            grid-row: 3/4;
+            grid-column: 1 / 2;
+        }
+        &__item:first-child{
+            grid-row: 1/2;
+            grid-column: 1 / 2;
+        }
+        &__item:last-child{
+            grid-row: 4/5;
+            grid-column: 1 / 2;
+        }
+        &__input{
+            width: 400px;
+        }
+    }
+}
+@media (max-width:450px) {
+    .block-page-news{
+        &__input{
+            width: 300px;
+        }
     }
 }

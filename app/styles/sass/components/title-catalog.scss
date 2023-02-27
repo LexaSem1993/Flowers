@@ -15,3 +15,11 @@
         margin-bottom: 50px;
     } 
 }
+@media (max-width:600px) {
+    .catalog{
+        &__title{
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
