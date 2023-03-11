@@ -72,11 +72,11 @@
         &__list2{
             display: grid;
             grid-template-columns: 260px;
-            grid-template-rows: repeat(4, 275px);
-            max-width: 302px;
+            grid-template-rows: 500px repeat(2, 275px);
+            max-width: 260px;
         }
         &__item:nth-child(2){
-            grid-row: 3/4;
+            grid-row: 2/3;
             grid-column: 1 / 2;
         }
         &__item:first-child{
@@ -84,7 +84,7 @@
             grid-column: 1 / 2;
         }
         &__item:last-child{
-            grid-row: 4/5;
+            grid-row: 3/4;
             grid-column: 1 / 2;
         }
         &__input{
