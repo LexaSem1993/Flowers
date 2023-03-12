@@ -50,6 +50,10 @@
         padding: 16px 15px;
         color: #fff;
     }
+    &__link-two-title:hover{
+        color: #956D84;
+        transition: color 0.3s ease-in-out;
+    }
     &__list-user{
         margin-left: auto;
         gap: 0;
@@ -61,6 +65,10 @@
     }
     &__link-user-title{
         padding: 15px;
+    }
+    &__link-user-title:hover{
+        color: #956D84;
+        transition: color 0.3s ease-in-out;
     }
     &__border{
         width: 1px;

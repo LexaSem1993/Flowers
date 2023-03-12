@@ -31,6 +31,10 @@
         line-height: 18px;
         color: #fff;
     }
+    &__link:hover{
+        color:#956D84;
+        transition: color 0.3s ease-in-out;
+    }
     &__item-information:not(:last-child),
     &__item-support:not(:last-child),
     &__item-private:not(:last-child),

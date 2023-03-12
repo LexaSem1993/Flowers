@@ -44,6 +44,14 @@
         grid-column: 4 / 5;
         grid-row: 0 / 2;
     }
+    &__item-discounts:hover,
+    &__item-roses:hover,
+    &__item-present:hover,
+    &__item-basket:hover,
+    &__item-boxes:hover{
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0.7;
+    }
     &__title-present{
         position: absolute;
         top: 44px;

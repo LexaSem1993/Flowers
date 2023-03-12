@@ -25,6 +25,10 @@
         line-height: 18px;
         color: #956D84;
     }
+    &__news-link:hover{
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+    }
     &__news-link::after{
         content: url(../images/arrows.svg);
         position: absolute;
@@ -43,6 +47,10 @@
         background-color: #956D84;
         align-items: center;
         padding: 0 24px 27px;
+    }
+    &__news:hover{
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
     }
     &__img-news{
         height: auto;

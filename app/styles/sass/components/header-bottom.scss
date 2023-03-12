@@ -103,8 +103,16 @@
     line-height: 18px;
     color: #333;
   }
+  &__nav-link:hover{
+      color: #956D84;
+      transition: color 0.3s ease-in-out;
+  }
   &__nav-option {
-    color: #956d84;
+      color: #956d84;
+  }
+  &__nav-option:hover {
+    color:#333;
+      transition: color 0.3s ease-in-out;
   }
   &__contacts {
     margin-top: 26px;

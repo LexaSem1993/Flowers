@@ -94,6 +94,9 @@
         display: block;
         padding-left: 31px;
       }
+    &__control:hover{
+        cursor: pointer;
+    }
     &__control-mark {
         position: absolute;
         top: 9px;
@@ -109,6 +112,10 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 38px;
+    }
+    &__control-label:hover{
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
     }
     &__control-input[type="checkbox"]:checked + &__control-mark::before {
         position: absolute;

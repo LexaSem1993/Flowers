@@ -69,6 +69,10 @@
         &__img{
             margin: 0 auto;
         }
+        &__img:hover{
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0.5;
+        }
         &__stars-container{
             margin-top: 16px;
             margin-left: 25px;
@@ -125,6 +129,10 @@
             margin: 0 auto;
             padding: 22px 51px;
         }
+        &__button-order:hover{
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
+        }
         &__button-order::before{
             content: url(../images/button-order.svg);
             position: absolute;
@@ -145,6 +153,10 @@
             margin: 0 auto;
             margin-top: 4px;
             padding: 15px 17px;
+        }
+        &__button-quickorder:hover{
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
         }
         .swipe{
             position: relative;

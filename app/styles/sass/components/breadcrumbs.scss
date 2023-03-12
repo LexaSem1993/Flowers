@@ -18,4 +18,9 @@
         color: #828282;
         opacity: 0.5;
     }
+    &__link:hover{
+        transition: color 0.3s ease-in-out;
+        color: #333;
+        opacity: 1;
+    }
 }
